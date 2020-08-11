@@ -13,7 +13,7 @@ describe "Guessing CLI" do
 
       expect(self).to receive(:gets).and_return("2")
 
-      expect { run_guessing_game }.to output(/Sorry! The computer guessed 6./).to_stdout
+      expect { run_guessing_game }.to output(/Guess a number from 1-6!\nSorry! the computer guessed 6.\n/).to_stdout
     end
 
     it "responds to a correct guess" do
